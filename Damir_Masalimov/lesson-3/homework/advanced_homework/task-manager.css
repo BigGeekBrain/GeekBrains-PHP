@@ -1,0 +1,98 @@
+div, span {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.container {
+	width: 800px;
+	height: 600px;
+	background: linear-gradient(to right bottom, #250a3c, #7d2267, #250a3c);
+	position: relative;
+	margin: auto;
+	border: 1px solid #bfbfbf;
+}
+
+.subcontainer {
+	width: 635px;
+	height: 540px;
+	border: 1px solid #bfbfbf;
+	background: #dadada;
+	margin: auto;
+	margin-top: 28px;
+	position: relative;
+	font-size: 0;
+}
+
+.head_container {
+	width: 635px;
+	height: 215px;
+	background: yellow;
+}
+
+.footer_container {
+	width: 635px;
+	height: 325px;
+	background: lightblue;
+}
+/*Containers for task-manager*/
+.inline_block {
+	box-sizing: border-box;
+	display: inline-block;
+	position: relative;
+}
+
+.date_container {
+	width: 210px;
+	height: 215px;
+	background: darkgrey;
+}
+
+.percent_container {
+	width: 425px;
+	height: 215px;
+	background: lightgrey;
+}
+
+.projects_container {
+	width: 210px;
+	height: 325px;
+	background: darkred;
+}
+
+.task_container {
+	width: 425px;
+	height: 325px;
+	background: darkgreen;
+}
+
+
+
+.year_block {
+	width: 210px;
+	height: 64px;
+	border-bottom: 1px solid white;
+	background: #dadada;
+}
+.month {
+	width: 52.5px;
+	height: 50px;
+	box-sizing: border-box;
+	display: inline-block;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	position: relative;
+	background: #c1c1c1;
+}
+
+.month_name {
+	line-height: 50px;
+	position: absolute;
+	font-family: OpenSans;
+	font-size: 18px;
+	font-weight: 100;
+	color: #fff;
+}
+.name {
+	width: 52.5px;
+	text-align: center;
+}
