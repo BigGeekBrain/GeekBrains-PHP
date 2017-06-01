@@ -41,7 +41,7 @@ $translitTable = [
 
 ];
 
-$inputWord = preg_split('//u',$word,-1,PREG_SPLIT_NO_EMPTY);
+$inputWord = preg_split('//u',mb_strtolower($word),-1,PREG_SPLIT_NO_EMPTY);
 //--------Working peace-------//
 foreach ($inputWord as $key => $value) {
     $find = array_search($value,array_flip($translitTable));
@@ -56,4 +56,6 @@ foreach ($inputWord as $key => $value) {
 
 }
 transString('Жили-были дед с бабой и была у них курочка Ряба.');
+echo "<br>";
+transString('А у реки, а у реки, а у реки гуляют девки и гуляют мужики.');
 echo "<br>";

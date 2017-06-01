@@ -40,7 +40,7 @@ $translitTable = [
 
 ];
 
-$inputWord = preg_split('//u',$word,-1,PREG_SPLIT_NO_EMPTY);
+$inputWord = preg_split('//u',mb_strtolower($word),-1,PREG_SPLIT_NO_EMPTY);
 //--------Working peace-------//
 foreach ($inputWord as $key => $value) {
     $find = array_search($value,array_flip($translitTable));

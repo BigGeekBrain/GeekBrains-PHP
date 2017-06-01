@@ -8,7 +8,7 @@ $characterTable = [
     '_' => ' '
 ];
 
-$inputStroka = preg_split('//u',$stroka,-1,PREG_SPLIT_NO_EMPTY);
+$inputStroka = preg_split('//u',mb_strtolower($stroka),-1,PREG_SPLIT_NO_EMPTY);
 
 foreach ($inputStroka as $key => $value) {
     $find = array_search($value, $characterTable);
