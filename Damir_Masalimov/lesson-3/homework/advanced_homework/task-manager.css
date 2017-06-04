@@ -12,7 +12,7 @@ div, span {
 	border: 1px solid #bfbfbf;
 }
 
-.subcontainer {
+.container__sub {
 	width: 635px;
 	height: 540px;
 	border: 1px solid #bfbfbf;
@@ -23,7 +23,7 @@ div, span {
 	font-size: 0;
 }
 
-.head_container {
+.container__head {
 	width: 635px;
 	height: 215px;
 	background: yellow;
@@ -33,6 +33,7 @@ div, span {
 	width: 635px;
 	height: 325px;
 	background: lightblue;
+	display: flex;
 }
 /*Containers for task-manager*/
 .inline_block {
@@ -43,7 +44,7 @@ div, span {
 
 .date_container {
 	width: 210px;
-	height: 215px;
+	height: 216px;
 	background: darkgrey;
 }
 
@@ -95,4 +96,20 @@ div, span {
 .name {
 	width: 52.5px;
 	text-align: center;
+}
+
+
+.percent_container__flex {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.percent__block {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background: #f4f4f4;
+	border-right: 1px solid #dadada;
+	box-sizing: border-box;
 }
