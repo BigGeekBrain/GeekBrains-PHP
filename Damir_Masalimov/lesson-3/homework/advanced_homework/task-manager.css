@@ -27,11 +27,19 @@ div, span {
 	width: 635px;
 	height: 215px;
 	background: yellow;
+	display: flex;
+}
+
+.middle__line {
+	height: 3px;
+	width: 100%;
+	background: blue;
+	display: flex;
 }
 
 .footer_container {
 	width: 635px;
-	height: 325px;
+	height: 322px;
 	background: lightblue;
 	display: flex;
 }
@@ -44,7 +52,7 @@ div, span {
 
 .date_container {
 	width: 210px;
-	height: 216px;
+	height: 215px;
 	background: darkgrey;
 }
 
@@ -56,13 +64,13 @@ div, span {
 
 .projects_container {
 	width: 210px;
-	height: 325px;
+	height: 322px;
 	background: darkred;
 }
 
 .task_container {
 	width: 425px;
-	height: 325px;
+	height: 322px;
 	background: darkgreen;
 }
 
@@ -110,6 +118,40 @@ div, span {
 	height: 100%;
 	width: 100%;
 	background: #f4f4f4;
-	border-right: 1px solid #dadada;
-	box-sizing: border-box;
+	border-right: 1px solid #cac8c8;
+	display: flex;
+	flex-direction: column;
+}
+
+.percent__circle {
+	flex-grow: 6;
+}
+
+.percent__lable {
+	flex-grow: 1;
+	background: #dbdbdb;
+	position: relative;
+}
+
+.lable__text {
+	font-family: Arial;
+	color:  #5b5b5b;
+	font-size: 12px;
+	font-weight: 400;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.middle__line__left {
+	width: 210px;
+	height: 100%;
+	background: #3397d4;
+}
+
+.middle__line__right {
+	width: 425px;
+	height: 100%;
+	background: #4cd729;
 }
