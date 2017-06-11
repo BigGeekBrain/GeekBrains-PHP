@@ -13,36 +13,18 @@ $val = [
         'Кронштадт',
         ],
     ];
+    $keys = array_keys ($val);
     $nM = count ($val ['Московская область']);
-    
     $i = 0;
-    
-    while ($city_name = current ($val)){
-    
-        if ($city_name == 'Москва'){
-            
-        echo (key($val)).':<br>';
-        
-        }
-        next ($val);
-    }
+    echo ($keys[0]), (': <br>');
     while ($i < $nM) {
     echo ($val['Московская область'] [$i]), (', ');
     $i++;
 };
 echo ('<br>');
-    
     $nSPb = count ($val ['Ленинградская область']);
     $i = 0;
-    while ($city_name = current ($val)){
-    
-        if ($city_name == 'Санкт-Петербург'){
-            
-        echo (key($val)).':<br>';
-        
-        }
-        next ($val);
-    }
+    echo ($keys[1]), (': <br>');
     while ($i < $nSPb) {
     echo ($val['Ленинградская область'] [$i]), (', ');
     $i++;
